@@ -1,5 +1,5 @@
 import React from 'react';
-import PetsRow from './PetsRow'
+import PetsRowJsx from './PetsRow'
 import {array} from 'prop-types'
 
 const PetsGrid = ({pets}) => {
@@ -18,7 +18,7 @@ const PetsGrid = ({pets}) => {
   
 
   return <div>
-    {pets.reduce(groupByThree, []).map((group, i) => <PetsRow key={i} pets={group} />)}
+    {pets.reduce(groupByThree, []).map((group, i) => <PetsRowJsx key={i} pets={group} />)}
   </div>
 }
 

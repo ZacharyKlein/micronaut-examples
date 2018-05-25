@@ -1,8 +1,8 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 import config from "../config";
-import PetsLayout from "./PetsLayout";
+import PetsLayoutJsx from "./PetsLayout";
 
-class VendorPets extends Component {
+class Pets extends Component {
 
   constructor() {
     super();
@@ -13,7 +13,7 @@ class VendorPets extends Component {
   }
 
   componentDidMount() {
-    fetch(`${config.SERVER_URL}/pets/vendor/${this.props.match.params.vendor}`)
+    fetch(`${config.SERVER_URL}/pets`)
       .then(r => r.json())
       .then(json => this.setState({pets: json}))
       .catch(e => console.warn(e))
@@ -24,9 +24,8 @@ class VendorPets extends Component {
     const {pets} = this.state;
     const {match} = this.props;
 
-    return <PetsLayout pets={pets} match={match} header={`Pets from ${match.params.vendor}`}/>
+    return <PetsLayoutJsx pets={pets} match={match}/>
   }
-
 }
 
-export default VendorPets
+export default Pets;

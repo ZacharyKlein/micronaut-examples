@@ -1,3 +1,5 @@
 micronaut:
     application:
         name: react
+    server:
+        port: 3000

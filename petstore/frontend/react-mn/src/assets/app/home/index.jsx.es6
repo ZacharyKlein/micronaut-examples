@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import config from "../config";
-import Offer from "./Offer";
+import OfferJsx from "./Offer";
 import Alert from "../display/Alert";
 import FeaturedPet from "./FeaturedPet";
 
@@ -42,7 +42,7 @@ class Home extends Component {
     const {offer, error} = this.state;
 
     return <div>
-      <Offer offer={offer}/>
+      <OfferJsx offer={offer}/>
       <Alert message={error} level='warning'/>
 
       <h2>Check out our Popular Pets!</h2>

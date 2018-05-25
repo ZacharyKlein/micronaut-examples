@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Route} from "react-router-dom";
-import PetsGrid from "./PetsGrid";
+import PetsGridJsx from "./PetsGrid";
 import {array} from 'prop-types'
 
 class PetsLayout extends Component {
@@ -61,7 +61,7 @@ class PetsLayout extends Component {
                </ul>
 
 
-               <PetsGrid pets={this.petsForTab(tab)}/>
+               <PetsGridJsx pets={this.petsForTab(tab)}/>
              </div>}
       />
     </div>

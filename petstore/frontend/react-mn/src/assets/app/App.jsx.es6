@@ -3,8 +3,8 @@ import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import Home from './home/index'
 import Pets from './pets/index'
 import Vendors from './vendors/index'
-import Pet from "./pets/Pet";
-import VendorPets from "./pets/VendorPets";
+import PetJsx from "./pets/Pet";
+import VendorPetsJsx from "./pets/VendorPets";
 import logo from './images/logo.png'
 import About from "./about";
 import './App.css'

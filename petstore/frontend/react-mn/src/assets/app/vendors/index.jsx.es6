@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import VendorsTable from "./VendorsTable";
+import VendorsTableJsx from "./VendorsTable";
 import config from '../config/index'
 
 class Vendors extends Component {
@@ -30,7 +30,7 @@ class Vendors extends Component {
               <h1 className="display-4">Vendors</h1>
             </div>
           </div>
-            <VendorsTable vendors={vendors} />
+            <VendorsTableJsx vendors={vendors} />
         </div>
     }
 }
