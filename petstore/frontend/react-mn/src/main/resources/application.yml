@@ -3,3 +3,5 @@ micronaut:
         name: react
     server:
         port: 3000
+assets:
+  enableES6: false

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import config from "../config";
+import config from "config";
 import OfferJsx from "./Offer";
 import Alert from "../display/Alert";
 import FeaturedPet from "./FeaturedPet";
@@ -11,7 +11,6 @@ class Home extends Component {
 
   constructor() {
     super();
-
     this.state = {
       offer: null,
       error: null
